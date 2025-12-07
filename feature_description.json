@@ -1,0 +1,73 @@
+Textbook: "Teaching Physical AI & Humanoid Robotics Course"
+
+Target Audience: University instructors teaching capstone robotics courses, graduate students specializing in embodied AI, and robotics engineers transitioning to humanoid systems. Assumes foundation in AI/ML and basic robotics concepts.
+
+Primary Focus: Creating a production-ready, implementation-driven textbook that delivers on the promise of "AI Systems in the Physical World" through hands-on modules using ROS 2, Gazebo, Unity, NVIDIA Isaac, and VLA integration.
+
+Core Success Criteria:
+
+Module Completion: All 4 modules must have fully implementable tutorials with working code
+
+Hardware Transparency: Clear guidance on required computational resources (RTX workstations, Jetson kits, robots) with budget alternatives
+
+Capstone Deliverable: Complete, step-by-step guide to building the "Autonomous Humanoid" that responds to voice commands, plans, navigates, and manipulates
+
+Academic Rigor: Peer-reviewed citations for all theoretical concepts while maintaining practical focus
+
+Deployment Ready: All content must generate a aining
+
+Hardware-accelerated VSLAM implementation with RealSense data
+
+Nav2 configuration for bipedal path planning (dynamic stability considerations)
+
+Deliverable: Object detection and navigation stack running in Isaac Sim
+
+Module 4: Vision-Language-Action (VLA)
+
+Whisper integration for voice command processing in ROS 2
+
+LLM prompt engineering for task decomposition ("Clean the room" -> ROS action sequence)
+
+Multi-modal fusion: Vision grounding with language instructions
+
+Capstone integration: End-to-end pipeline from voice to physical action
+
+Deliverable: Full VLA system where simulated robot executes complex natural language commands
+
+Hardware Section Requirements:
+
+Workstation Specifications: Exact RTX GPU requirements with VRAM calculations for different scene comfunctional Docusaurus site deployable to GitHub Pages
+
+Module Specifications:
+
+Module 1: The Robotic Nervous System (ROS 2)
+
+Complete ROS 2 Humble installation guide for Ubuntu 22.04
+
+rclpy Python agent development with 5+ working examples
+
+URDF tutorials for humanoid robots (at least 2 different models)
+
+ROS 2 controllers for bipedal motion with parameter tuning
+
+Deliverable: Students can create a ROS 2 package that controls a simulated humanoid joint
+
+Module 2: The Digital Twin (Gazebo & Unity)
+
+Gazebo world building with physics properties (gravity, friction, collisions)
+
+URDF-to-SDF conversion for high-fidelity simulation
+
+Sensor simulation: LiDAR point cloud generation, RGB-D camera data streams, IMU noise models
+
+Unity integration pipeline for human-robot interaction scenes
+
+Deliverable: Complete simulated apartment environment with interactive objects
+
+Module 3: The AI-Robot Brain (NVIDIA Isaac™)
+
+Isaac Sim Omniverse deployment on RTX workstations
+
+Synthetic data generation pipeline for perception trplexities
+
+Jetson Deployment Guide: Flashing JetPack, optimizing ROS 2 nodes for edge compute\n\nSensor Configuration: RealSense D435i calibration, LiDAR integration, IMU filtering\n\nRobot Options: Unitree Go2 vs. G1 vs. budget alternatives with ROS 2 driver setup\n\nCloud Alternative: AWS g5/g6 instance setup with latency mitigation strategies\n\nStructural Requirements:\n\nChapter Format: Learning objectives -> theory -> implementation -> exercises -> references\n\nCode Standards: All code must be tested on Ubuntu 22.04 with ROS 2 Humble\n\nVisual Elements: System architecture diagrams, hardware connection schematics, data flow charts\n\nAssessment Integration: ROS package rubrics, simulation evaluation metrics, capstone grading criteria\n\nProgression: Linear build from Week 1-13 matching course schedule\n\nTechnical Constraints:\n\nPlatform: Ubuntu 22.04 LTS as primary OS (with Windows/macOS compatibility notes)\n\nSoftware Versions: ROS 2 Humble, Gazebo 11, Unity 2022 LTS, Isaac Sim 2023.1+\n\nWord Count: 30,000-40,000 words (textbook length)\n\nSources: Minimum 40 references (60% peer-reviewed robotics conferences: ICRA, IROS, RSS)\n\nTimeline: Content generation complete in 4 weeks\n\nQuality Gates:\n\nCode Verification: Every code snippet must compile and run in described environment\n\nHardware Validation: All specifications must match commercially available components\n\nPedagogical Flow: Each chapter's learning objectives must be demonstrably achievable\n\nCapstone Completeness: Final project must be buildable within 20 hours following instructions\n\nCloud/On-Prem Parity: Tutorials must work in both environments with noted adjustments\n\nExplicitly Not Included:\n\nBasic AI/ML theory (assumes prerequisite knowledge)\n\nNon-humanoid robotics (except where applicable for budget alternatives)\n\nProprietary software without academic licenses\n\nHardware fabrication/mechanical design\n\nExtensive ethical discussions (brief safety section only)\n\nHistorical robotics timeline\n\nDeployment Requirements:\n\nDocusaurus Structure: Proper sidebar navigation, search functionality, mobile responsiveness\n\nGitHub Pages: Automatic deployment via GitHub Actions\n\nCode Hosting: GitHub repository with complete example packages\n\nMedia Assets: Optimized images, diagrams, and reference files\n\nInstructor Resources: Slide templates, assignment sheets, solution guides (separate section)\n\nSuccess Metrics:\n\nInstructor can directly adopt textbook for 13-week quarter without supplementary materials\n\nStudents with described hardware can complete all modules successfully\n\nCloud-only students can achieve 80% of learning objectives\n\nCapstone project completion rate >90% following instructions\n\nZero "it depends" or vague implementation guidance\n\nValidation Protocol:\nBefore final delivery, the textbook must pass:\n\nTechnical accuracy review by robotics PhD candidate\n\nPedagogical review by experienced robotics instructor\n\nImplementation test by novice following instructions exactly\n\nHardware compatibility check across described configurations\n\nDocusaurus build and deployment verification\n\nThis spec ensures your textbook will be a turnkey solution for teaching Physical AI with humanoid robotics, bridging the critical gap between digital AI and physical embodiment with practical, working implementations.

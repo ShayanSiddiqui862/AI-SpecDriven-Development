@@ -1,0 +1,149 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.ENV
+
+# Docusaurus
+.cache/
+.build/
+.docusaurus/
+/dist/
+/bundle/
+
+# Build outputs
+build/
+dist/
+*.min.js
+*.bundle.js
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env*
+!.env.example
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/refs/replace/
+.pytest_cache/
+.hypothesis/
+
+# JavaScript/Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+gulpfile.js
+Gruntfile.js
+.nyc_output
+coverage/
+.nyc_output/
+.nyc_coverage/
+coverage/
+*.lcov
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.npm
+.npmrc
+package-lock.json
+yarn.lock
+.pnp/
+.pnp.js
+.yarn-integrity
+.yarn/
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# ROS/Robotics specific
+*.dae
+*.stl
+*.obj
+*.urdf
+*.xacro
+*.sdf
+*.world
+*.launch
+*.yaml
+*.yml
+*.bag
+*.db3
+
+# Simulation environments
+isaac_sim/
+isaac-sim/
+gazebo/
+unity/
+Unity/
+Build/
+Library/
+Logs/
+Temp/
+
+# NVIDIA Isaac specific
+.omniverse/
+.nucleus/
+.carb/
+
+# Code coverage
+coverage/
+*.lcov
+*.coverage
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.cov
+.nyc_output/

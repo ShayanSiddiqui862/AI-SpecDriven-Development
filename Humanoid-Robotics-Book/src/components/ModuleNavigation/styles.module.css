@@ -1,0 +1,78 @@
+.moduleNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.navButton {
+  flex: 0 1 45%;
+}
+
+.navButton:first-child {
+  text-align: left;
+}
+
+.navButton:last-child {
+  text-align: right;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ifm-global-radius);
+  transition: background-color var(--ifm-transition-fast) var(--ifm-easing);
+}
+
+.navButton:first-child .link {
+  flex-direction: row;
+}
+
+.navButton:last-child .link {
+  flex-direction: row-reverse;
+}
+
+.link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.navLabel {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.25rem;
+}
+
+.navTitle {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+@media (max-width: 576px) {
+  .moduleNavigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navButton {
+    flex: 1;
+  }
+
+  .navButton:first-child,
+  .navButton:last-child {
+    text-align: center;
+  }
+}
