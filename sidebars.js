@@ -91,13 +91,7 @@ const sidebars = {
         'instructor-resources/README'
       ],
     },
-    {
-      type: 'category',
-      label: 'Templates',
-      items: [
-        'templates/chapter-template'
-      ],
-    },
+
   ],
 };
 
