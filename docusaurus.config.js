@@ -15,7 +15,7 @@ const config = {
   baseUrl: '/AI-SpecDriven-Development/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
+  organizationName: 'Shayan-Siddiqui', // Usually your GitHub org/user name.
   projectName: 'AI-Book', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
