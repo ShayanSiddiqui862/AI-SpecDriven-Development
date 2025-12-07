@@ -12,7 +12,7 @@ const config = {
   url: 'https://your-username.github.io',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/AI-SpecDriven-Development/',
 
   // GitHub pages deployment config.
   organizationName: 'your-username', // Usually your GitHub org/user name.
