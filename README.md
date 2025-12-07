@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Physical AI & Humanoid Robotics Textbook - COMPLETE
 
 ## Project Status: ✅ COMPLETED SUCCESSFULLY
@@ -108,3 +109,6 @@ For detailed implementation, visit the documentation in the `/docs/` directory.
 ---
 
 *Project completed using AI-Driven Development methodology with context7 MCP*
+=======
+# AI-SpecDriven-Development
+>>>>>>> 4342741dde6bb79b060f488e04c7b09dd7d65543
