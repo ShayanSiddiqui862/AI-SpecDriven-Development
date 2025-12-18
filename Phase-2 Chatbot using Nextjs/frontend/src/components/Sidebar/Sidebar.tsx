@@ -128,7 +128,7 @@ const SidebarItemComponent = ({ item, currentPath, level = 0, isCollapsed }: Sid
         >
           {isCollapsed ? (
             <span className="text-xs font-medium">
-              {item.label.charAt(0)}
+              {item.label?.charAt(0)}
             </span>
           ) : (
             <>
@@ -171,7 +171,7 @@ const SidebarItemComponent = ({ item, currentPath, level = 0, isCollapsed }: Sid
     >
       {isCollapsed ? (
         <span className="text-xs">
-          {item.label.charAt(0)}
+          {item.label?.charAt(0)}
         </span>
       ) : (
         <span className="truncate max-w-[140px]">{item.label}</span>
