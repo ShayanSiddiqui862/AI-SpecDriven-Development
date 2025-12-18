@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
+
 interface MarkdownRendererProps {
   content: string;
 }
@@ -13,14 +14,20 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
-        code({ node, inline, className, children, ...props }) {
+        // 1. Removed 'inline' from the arguments to fix the TS error
+        code({ node, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '');
-          return !inline && match ? (
+          
+          // 2. In v10, we use 'match' to decide if it's a code block
+          // If it has a language- class, it's a block; otherwise, it's inline.
+          const { ref, style, ...rest } = props;
+          return match ? (
             <SyntaxHighlighter
-              style={vscDarkPlus}
+              {...rest}
+              style={vscDarkPlus as any} // Cast to any if there's a minor Prism type mismatch
               language={match[1]}
               PreTag="div"
-              {...props}
+             
             >
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
